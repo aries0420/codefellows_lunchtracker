@@ -1,0 +1,29 @@
+<h1>Listing dailylunches</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Lunch time</th>
+    <th>Lunch</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dailylunches.each do |dailylunch| %>
+  <tr>
+    <td><%= dailylunch.date %></td>
+    <td><%= dailylunch.lunch_time %></td>
+    <td><%= dailylunch.lunch %></td>
+    <td><%= dailylunch.description %></td>
+    <td><%= link_to 'Show', dailylunch %></td>
+    <td><%= link_to 'Edit', edit_dailylunch_path(dailylunch) %></td>
+    <td><%= link_to 'Destroy', dailylunch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dailylunch', new_dailylunch_path %>

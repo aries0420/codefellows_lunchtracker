@@ -1,0 +1,33 @@
+<%= form_for(@dailylunch) do |f| %>
+  <% if @dailylunch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dailylunch.errors.count, "error") %> prohibited this dailylunch from being saved:</h2>
+
+      <ul>
+      <% @dailylunch.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :lunch_time %><br />
+    <%= f.time_select :lunch_time %>
+  </div>
+  <div class="field">
+    <%= f.label :lunch %><br />
+    <%= f.text_field :lunch %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
