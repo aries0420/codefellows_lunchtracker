@@ -1,12 +1,8 @@
 == About Lunch Tracker
 
-An app a day keeps the skills sharp! We call this focused practice. You do the \
-steps, make and correct mistakes, find things to ask questions about... This is\
- how your skills improve.
+An app a day keeps the skills sharp! We call this focused practice. You do the steps, make and correct mistakes, find things to ask questions about... This is how your skills improve.
 
-Today, make a micro-app to keep track of what you have for lunch every day. Pic\
-k whatever attributes you'd like to track about your lunches. Update the README\
- file to describe the app.
+Today, make a micro-app to keep track of what you have for lunch every day. Pick whatever attributes you'd like to track about your lunches. Update the README file to describe the app.
  
 Submit a screenshot of your app running on your computer with a few sample entries. Or, if you have some comfort with git, make a repo for your project and submit a link to it.
 
